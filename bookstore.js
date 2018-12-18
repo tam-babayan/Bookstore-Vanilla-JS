@@ -43,9 +43,33 @@ function fillData(data) {
         flipCardInner.append(cardBack)
 
         let btn = document.createElement("BUTTON")
+        btn.setAttribute("data-toggle", "modal")
+        btn.setAttribute("data-target", "#exampleModalCenter" + i)
+        btn.setAttribute("type","button")
         btn.className = "btn btn-warning"
         let text = document.createTextNode("See More")
         btn.appendChild(text)
         cardBack.appendChild(btn)
+
+        let modal = document.createElement('div')
+        modal.className = "modal fade"
+        modal.id = "exampleModalCenter" + i
+        modal.setAttribute("tabindex", "-1")
+        modal.setAttribute("role", "dialog")
+        modal.setAttribute("aria-labelledby", "exampleModalCenterTitle")
+        modal.setAttribute("aria-hidden","true")
+        container.appendChild(modal)
+
+        let modalDialog = document.createElement('div')
+        modalDialog.className = "modal-dialog modal-dialog-centered"
+        modalDialog.setAttribute("role", "document")
+        modal.appendChild(modalDialog)
+        
+        let modalContent = document.createElement('IMG')
+        modalContent.className = "modal-content"
+        modalContent.src = data.books[i].detalle
+        modalDialog.appendChild(modalContent)
+
     }
 }
+
