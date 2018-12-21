@@ -35,7 +35,7 @@
 }
 
 .flip-card-back {
-    background-color: #2980b9;
+    background-color: #41ADF1;
     color: white;
     transform: rotateY(180deg);
     z-index: 1;
@@ -44,6 +44,7 @@
 .flip-card-back h3 {
     font-weight: bold;
     padding-top: 50px;
+    color: #FFE394
 }
 
 .flip-card-back p {
@@ -51,7 +52,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    
+
 }
 
 #container {
@@ -59,3 +60,45 @@
     justify-content: space-around;
 }
 
+.active-pink-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #f48fb1;
+    box-shadow: 0 0 0 1px #f48fb1;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-linkedin-square {
+    color: #1985bc;
+}
+
+.fa-twitter-square {
+    color: #1da1f2;
+}
+
+.fa-google-plus-square {
+    color: #db4437
+}
+
+.fa-pinterest-square {
+    color: #bd081c;
+}
+
+.fa-row {
+    margin-left: 12px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.fa {
+    padding: 3px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+.text-on-button {
+    color: #FFE394
+}

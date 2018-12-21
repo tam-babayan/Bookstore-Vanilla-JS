@@ -7,7 +7,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Home</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -28,7 +29,8 @@
 
                 <!-- Brand -->
                 <a class="navbar-brand waves-effect" href="index.html">
-                    <strong class="blue-text">Bookstore</strong>
+                    <img src="img/logo.jpg" width="70px" , height="70px">
+                    <span class="text-muted name">Bookstore</span>
                 </a>
 
                 <!-- Collapse -->
@@ -41,38 +43,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <!-- Left -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link waves-effect" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+                    <div class="navbar-nav mr-auto">
 
-                    </ul>
+                    </div>
 
                     <!-- Right -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <form class="form-inline">
-                                <div class="md-form my-0">
-                                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"
-                                        id="book-name" onkeyup="searchFunction()">
-                                </div>
-                            </form>
-
-                        </li>
-                    </ul>
-
+                    <div class="fa-row mb-4">
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i>
+                    </div>
                 </div>
 
             </div>
@@ -89,14 +71,19 @@
                 <!-- Content -->
                 <div class="card-body text-white text-center py-5 px-5 my-5">
 
-                    <h1 class="mb-4">
-                        <strong>Online Bookstore</strong>
-                    </h1>
+                    <h2 class="mb-4">
+                        <strong>Online bookstore specializing in technical books
+                        </strong>
+                    </h2>
 
                     <h5 class="mb-4">
-                        With over 1 million books.
+                        <p>Get fast access to thousands of technology
+                            related books.</p>
                     </h5>
-
+                    <div class=" search-button active-pink-3 active-pink-4 mb-4">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="book-name"
+                            onkeyup="searchFunction()">
+                    </div>
 
                 </div>
                 <!-- Content -->

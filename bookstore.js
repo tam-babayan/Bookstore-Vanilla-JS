@@ -13,9 +13,9 @@ function getData() {
         .catch(error => console.error(error))
 }
 
-function fillData(x) {
+function fillData(array) {
     let container = document.querySelector('#container')
-    for (let i = 0; i < x.length; i++) {
+    for (let i = 0; i < array.length; i++) {
 
         let flipCard = document.createElement('div')
         flipCard.className = "flip-card"
@@ -29,17 +29,17 @@ function fillData(x) {
         cardFront.className = "flip-card-front"
         let image = document.createElement('IMG')
         image = new Image(350, 450)
-        image.src = x[i].portada
+        image.src = array[i].portada
         cardFront.append(image)
         flipCardInner.append(cardFront)
 
         let cardBack = document.createElement('div')
         cardBack.className = "flip-card-back"
         let titel = document.createElement('h3')
-        titel.innerHTML = x[i].titulo
+        titel.innerHTML = array[i].titulo
         cardBack.append(titel)
         let description = document.createElement('p')
-        description.innerHTML = x[i].descripcion
+        description.innerHTML = array[i].descripcion
         cardBack.append(description)
         flipCardInner.append(cardBack)
 
@@ -47,7 +47,7 @@ function fillData(x) {
         btn.setAttribute("data-toggle", "modal")
         btn.setAttribute("data-target", "#exampleModalCenter" + i)
         btn.setAttribute("type", "button")
-        btn.className = "btn btn-warning"
+        btn.className = "btn btn-outline-white waves-effect"
         let text = document.createTextNode("See More")
         btn.appendChild(text)
         cardBack.appendChild(btn)
@@ -67,7 +67,7 @@ function fillData(x) {
         modal.appendChild(modalDialog)
 
         let modalContent = document.createElement('IMG')
-        modalContent.src = x[i].detalle
+        modalContent.src = array[i].detalle
         modalDialog.appendChild(modalContent)
     }
 }
@@ -75,7 +75,8 @@ function fillData(x) {
 function searchFunction() {
     document.querySelector('#container').innerHTML = ''
     var searchValue = document.getElementById("book-name").value
-    var filteredobject = books.filter(book => book.titulo.includes(searchValue) || book.titulo.toLowerCase().includes(searchValue))
-    console.log(filteredobject)
-    var result = (filteredobject.length) ? fillData(filteredobject) : (document.querySelector('#container').innerHTML = "No matching results")
+    var filteredobject = books.filter(book => book.titulo.includes(searchValue) ||
+        book.titulo.toLowerCase().includes(searchValue))
+    var result = (filteredobject.length) ? fillData(filteredobject) : (document
+        .querySelector('#container').innerHTML = "No matching results")
 }
