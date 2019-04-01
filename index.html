@@ -7,47 +7,33 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Home</title>
     <!-- Font Awesome -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
     <link href="css/style.min.css" rel="stylesheet">
+    <!-- Custom styles-->
     <link href="bookstore.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <!--Main Navigation-->
+    
     <header>
-
-        <!-- Navbar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
             <div class="container">
-
-                <!-- Brand -->
                 <a class="navbar-brand waves-effect" href="index.html">
                     <img src="img/logo.jpg" width="70px" , height="70px">
                     <span class="text-muted name">Bookstore</span>
                 </a>
-
-                <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <!-- Left -->
-                    <div class="navbar-nav mr-auto">
-
-                    </div>
-
-                    <!-- Right -->
+                    <div class="navbar-nav mr-auto"></div>
                     <div class="fa-row mb-4">
                         <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                         <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
@@ -56,55 +42,36 @@
                         <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i>
                     </div>
                 </div>
-
             </div>
         </nav>
-
     </header>
-    <!--Main layout-->
+
     <main class="mt-5 pt-5">
         <div class="container">
-
-            <!--Section: Jumbotron-->
-            <section class="card wow fadeIn" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
-
-                <!-- Content -->
+            <section class="card wow fadeIn"
+                style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
                 <div class="card-body text-white text-center py-5 px-5 my-5">
-
                     <h2 class="mb-4">
                         <strong>Online bookstore specializing in technical books
                         </strong>
                     </h2>
-
                     <h5 class="mb-4">
                         <p>Get fast access to thousands of technology
                             related books.</p>
                     </h5>
-                    <div class=" search-button active-pink-3 active-pink-4 mb-4">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="book-name"
-                            onkeyup="searchFunction()">
+                    <div class="search-button active-pink-3 active-pink-4 mb-4">
+                        <input class="form-control" type="text" placeholder="Title Search" aria-label="Search"
+                            id="book-name" onkeyup="searchFunction()">
                     </div>
-
                 </div>
-                <!-- Content -->
             </section>
-
             <hr class="my-5">
-
-            <!--Section: Cards-->
-            <section class="row mb-4 wow fadeIn" id="container">
-
-
-
-
+            <section class="row mb-4" id="container">
             </section>
         </div>
-
         <!--Pagination-->
         <nav class="d-flex justify-content-center wow fadeIn">
             <ul class="pagination pg-blue">
-
-                <!--Arrow left-->
                 <li class="page-item disabled">
                     <a class="page-link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
@@ -138,40 +105,29 @@
                 </li>
             </ul>
         </nav>
-
         </section>
-
         </div>
     </main>
 
-    <!--Footer-->
     <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
         <hr class="my-4">
-
-        <!-- Social icons -->
         <div class="pb-4">
             <a href="https://www.facebook.com" target="_blank">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
-
             <a href="https://twitter.com" target="_blank">
                 <i class="fa fa-twitter mr-3"></i>
             </a>
-
             <a href="https://plus.google.com" target="_blank">
                 <i class="fa fa-google-plus mr-3"></i>
             </a>
-
             <a href="https://pinterest.com" target="_blank">
                 <i class="fa fa-pinterest mr-3"></i>
             </a>
         </div>
-
-        <!--Copyright-->
         <div class="footer-copyright py-3">
             © 2018 Copyright:
         </div>
-
     </footer>
 
     <!-- SCRIPTS -->
@@ -183,11 +139,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Initializations -->
-    <script type="text/javascript">
-        // Animations initialization
-        new WOW().init();
-    </script>
     <script type="text/javascript" src="bookstore.js"></script>
 </body>
 

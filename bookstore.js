@@ -16,7 +16,7 @@ function getData() {
 function fillData(array) {
     let container = document.querySelector('#container')
     for (let i = 0; i < array.length; i++) {
-
+        
         let flipCard = document.createElement('div')
         flipCard.className = "flip-card"
         container.append(flipCard)
